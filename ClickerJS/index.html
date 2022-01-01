@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/alertas.css">
+    <script src="js/clicker.js"></script>
+    <author>João Monteiro</author>
+    <title>LOL Clicker</title>
+</head>
+<body>
+    <div id="alertas">
+        <div id="alert_box">
+            <div class="button_box"><button onclick="call_close_alerts()">ok</button></div>
+        </div>
+    </div>
+    <div class="over">
+        <div class="clear">
+            <span>progresso:</span><br>
+            <button onclick="call_save()">salvar</button>
+            <button onclick="call_clear()">apagar</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top-area">
+            <div class="gold-area">
+                <div class="icon-gold">
+                    <img src="img/gold.png" alt="">
+                </div>
+                <div class="text-gold" id="text-gold"></div>
+            </div>
+            <div class="xp-area">
+                <div class="xp-holder">
+                    <div id="xp-progress">
+                        <div id="xp-progress-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="larger-area">
+            <div class="clicker-area">
+                <div id="click_button" onclick="click_adder()">
+                </div>
+            </div>
+            <div class="buy-area">
+                <h4>Hunting Area</h4>
+                <div class="hunting-area">
+                    <div class="box-item" onclick="sell()" id="box1"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                </div>
+                <h4>Farming Area</h4>
+                <div class="farming-area">
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                    <div class="box-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

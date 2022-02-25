@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <meta name="author" content="João Monteiro">
+    <meta name="description" content="Pick a random quote">
+    <meta name="keywords" content="HTML, CSS, JavaScript, JSON, Randomizer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="quotes.json"></script>
+    <script type="text/javascript" src="randomizer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="holder">
+            <div class="quoteBox">
+                <figure>
+                    <div class="text-center">
+                        <img id="image" style="max-width: 280px; max-height: 300px;" src="https://s2.glbimg.com/7W8s0BN-5ICwCN13nalPHKsAECw=/e.glbimg.com/og/ed/f/original/2021/09/20/gettyimages-96211522.jpg" class="rounded" alt="author">
+                      </div>
+                    <blockquote class="blockquote">
+                      <p id="quoteP">A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer" id="authorP">
+                      Author
+                    </figcaption>
+                  </figure>
+                <button type="button" class="btn btn-outline-dark" onclick="generateQuote()">Pick a random quote</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
